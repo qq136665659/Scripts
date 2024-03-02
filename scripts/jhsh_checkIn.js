@@ -88,9 +88,9 @@ if (isGetCookie = typeof $request !== `undefined`) {
   !(async () => {
     if (!autoLoginInfo || !bodyStr) {
       $.msg($.name, '❌ 请先获取建行生活Cookie。');
+          /**
       return;
     }
-    /**
     const date = new Date();
     $.whichDay = date.getDay();
     $.weekMap = {
