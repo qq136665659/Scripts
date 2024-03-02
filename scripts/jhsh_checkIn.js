@@ -88,7 +88,7 @@ if (isGetCookie = typeof $request !== `undefined`) {
   !(async () => {
     if (!autoLoginInfo || !bodyStr) {
       $.msg($.name, '❌ 请先获取建行生活Cookie。');
-          /**
+      /*
       return;
     }
     const date = new Date();
@@ -107,8 +107,8 @@ if (isGetCookie = typeof $request !== `undefined`) {
       console.log(text);
       message += text;
       return;
+      */
     }
-    */
     console.log(`\n共有[${bodyArr.length}]个建行生活账号\n`);
     await getLatestVersion();  // 获取版本信息
     for (let i = 0; i < bodyArr.length; i++) {
