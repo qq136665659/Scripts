@@ -90,6 +90,7 @@ if (isGetCookie = typeof $request !== `undefined`) {
       $.msg($.name, '❌ 请先获取建行生活Cookie。');
       return;
     }
+    /**
     const date = new Date();
     $.whichDay = date.getDay();
     $.weekMap = {
@@ -107,6 +108,7 @@ if (isGetCookie = typeof $request !== `undefined`) {
       message += text;
       return;
     }
+    */
     console.log(`\n共有[${bodyArr.length}]个建行生活账号\n`);
     await getLatestVersion();  // 获取版本信息
     for (let i = 0; i < bodyArr.length; i++) {
